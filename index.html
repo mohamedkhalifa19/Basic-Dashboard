@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BoxIcon Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div id="menu-icon" class="bx bx-menu-alt-right"></div>
+        <div class="header-left">
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="header-right">
+          <i class="bx bx-bell"></i>
+          <i class="bx bx-envelope"></i>
+          <i class="bx bx-user-circle"></i>
+        </div>
+      </header>
+      <!-- End Header -->
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand"><i class="bx bx-cart"></i>STORE</div>
+          <div id="close-icon" class="bx bx-x"></div>
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <i class="bx bxs-dashboard"></i>Dashboard
+          </li>
+          <li class="sidebar-list-item">
+            <i class="bx bx-store-alt"></i>Products
+          </li>
+          <li class="sidebar-list-item">
+            <i class="bx bx-category"></i>categories
+          </li>
+          <li class="sidebar-list-item">
+            <i class="bx bx-group"></i>Customers
+          </li>
+          <li class="sidebar-list-item">
+            <i class="bx bxs-book-content"></i>Inventory
+          </li>
+          <li class="sidebar-list-item">
+            <i class="bx bxs-report"></i>Reports
+          </li>
+          <li class="sidebar-list-item"><i class="bx bx-cog"></i>Settings</li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h3>PRODUCTS</h3>
+              <i class="bx bx-store-alt"></i>
+            </div>
+            <h1>249</h1>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>CATEGORIES</h3>
+              <i class="bx bx-category"></i>
+            </div>
+            <h1>56</h1>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>GROUPS</h3>
+              <i class="bx bx-group"></i>
+            </div>
+            <h1>1500</h1>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>ALERTS</h3>
+              <i class="bx bx-bell"></i>
+            </div>
+            <h1>56</h1>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="chart-card">
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="bar-chart"></div>
+          </div>
+          <div class="chart-card">
+            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <div id="area-chart"></div>
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+    <!-- Scripts -->
+    <!-- Apex Charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js"></script>
+    <!-- Custom Js File -->
+    <script src="Js/script.js"></script>
+  </body>
+</html>
